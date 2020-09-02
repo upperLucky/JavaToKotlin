@@ -10,6 +10,7 @@ import android.util.TypedValue
 import android.view.Gravity
 import androidx.appcompat.widget.AppCompatTextView
 import com.example.app.R
+import com.example.core.com.example.core.utils.px
 import com.example.core.utils.Utils
 import java.util.jar.Attributes
 import kotlin.random.Random
@@ -26,7 +27,7 @@ class CodeView constructor(context: Context, attr: AttributeSet?) : AppCompatTex
         isAntiAlias = true
         style = Paint.Style.STROKE
         color = getContext().getColor(R.color.colorAccent)
-        strokeWidth = Utils.dp2px(6f)
+        strokeWidth = 6f.px
     }
 
     private val codeList = arrayOf(
