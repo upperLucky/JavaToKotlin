@@ -5,5 +5,5 @@ package com.example.core
  * desc:
  */
 interface BaseView<T> {
-    fun getPresenter(): T
+   val presenter : T
 }
